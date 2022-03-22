@@ -1,11 +1,13 @@
-CREATE DATABASE crud_php;
+CREATE DATABASE tutorial_crud;
 
-use crud_php;
+use tutorial_crud;
 
 CREATE TABLE alumnos (
   id INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-  name VARCHAR(30) NOT NULL,
-  description VARCHAR(90) NOT NULL,
+  nombre VARCHAR(30) NOT NULL,
+  apellido VARCHAR(30) NOT NULL,
+  email VARCHAR(50) NOT NULL,
+  edad INT(3),
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
   updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
